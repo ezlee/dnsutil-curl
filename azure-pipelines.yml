@@ -22,7 +22,7 @@ variables:
   imageName: 'ezlee/dnsutil-curl'
   dockerRegistryServiceConnection: 'docker.io/ezlee'
   imageRepository: 'ezlee/$(imageName)' 
-  containerRegistry: 'docker.io/ezlee'
+  containerRegistry: 'docker.io'
   dockerfilePath: 'app/Dockerfile'
   tag: '$(Build.BuildId)'
 
