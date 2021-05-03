@@ -19,7 +19,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  imageName: 'ezlee/dnsutil-curl'
+  imageName: 'dnsutil-curl'
   dockerRegistryServiceConnection: 'docker.io/ezlee'
   imageRepository: 'ezlee/$(imageName)' 
   containerRegistry: 'docker.io/ezlee'
