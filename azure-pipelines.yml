@@ -45,11 +45,11 @@ stages:
       inputs:
         targetType: 'inline'
         script: 'env | sort'
-    - task: Bash@3
-      displayName: list files
-      inputs:
-        targetType: 'inline'
-        script: 'whoami; pwd ; ls -alh; which docker; docker version; cat $BUILD_SOURCESDIRECTORY/app/server.js'
+#    - task: Bash@3
+#      displayName: list files
+#      inputs:
+#        targetType: 'inline'
+#        script: 'whoami; pwd ; ls -alh; which docker; docker version; cat $BUILD_SOURCESDIRECTORY/app/server.js'
 #    - task: replacetokens@3
 #      displayName: Add build number in server.js
 #      inputs:
