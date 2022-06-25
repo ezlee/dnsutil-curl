@@ -1,4 +1,3 @@
-FROM gcr.io/kubernetes-e2e-test-images/dnsutils:1.3
+FROM ubuntu:latest
 
-RUN apk update
-RUN apk add curl
+RUN apt-get update && apt-get install -yq dnsutils curl && apt-get clean && rm -rf /var/lib/apt/lists
